@@ -11,13 +11,14 @@ fonts
 images  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the images used in the game and the header image.  
 scripts  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains all of the JavaScript files used in the game.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains all of the JavaScript scripts.  
 styles  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains all of the stylesheets.
 
 ## Sources:
 
-I wrote all of the code myself. I got the rock, paper, and scissors images from Weber State University, and I created the header in Adobe Photoshop.
+I wrote all of the code myself. I got the rock, paper, and scissors images from Weber State University, and I created the header in Adobe Photoshop.  
+I got the Amiko font files from https://google-webfonts-helper.herokuapp.com/fonts/amiko?subsets=latin, and I got the Cyberspace font files from https://www.onlinewebfonts.com/download/84d59e31b195d8b63648554301efdc33.
 
 ## Author:
 
