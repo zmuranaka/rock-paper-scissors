@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--
+		File: rps_gambling.html
+		Zachary Muranaka
+		Rock-paper-scissors game with a gambling twist
+	 -->
+	<meta charset="utf-8">
+	<title>Rock Paper Scissors</title>
+	<link href="styles/rps_styles.css" rel="stylesheet">
+	<link href="styles/rps_gambling_styles.css" rel="stylesheet">
+	<link href="styles/rps_scores_styles.css" rel="stylesheet">
+	<script src="scripts/rps_gambling.js" async></script>
+</head>
+
+<body>
+	
+	<header>
+		<img src="images/rps_header.png" alt="Rock Paper Scissors" />
+		<nav>
+			<ul>
+				<li>
+					<a href="rps_classic.html">Classic</a>
+				</li>
+				<li>
+					<a href="rps_gambling.html">Gambling</a>
+				</li>
+				<li>
+					<a href="rps_reverse.html">Reverse</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="images">
+		<div id="playerDiv">
+			<img src="images/rock.jpg" id="player" alt="Player">
+		</div>
+
+		<div id="computerDiv">
+			<img src="images/blank.jpg" id="computer" alt="">
+		</div>
+		
+		<div id="results">
+			
+		</div>
+	</section>
+	
+	<div id="playAgainDiv">
+	
+	</div>
+	
+	<div id="creditDiv">
+		<label for="gambleBox" >Wager Amount: </label>
+		<input type="text" id="gambleBox">
+	</div>
+
+	<section id="buttons">
+		<input type="button" id="rock" value="Rock">
+		<input type="button" id="paper" value="Paper">
+		<input type="button" id="scissors" value="Scissors">
+	</section>
+	
+	<h1 id="highScoreHeader">high scoREs:</h1>
+	<ol id="highScores">
+		<li id="highScore1">
+		
+		</li>
+		<li id="highScore2">
+	
+		</li>
+		<li id="highScore3">
+	
+		</li>
+		<li id="highScore4">
+	
+		</li>
+		<li id="highScore5">
+	
+		</li>
+	</ol>
+	
+	<footer>
+		I accessed the Amiko font from
+		<a href="https://google-webfonts-helper.herokuapp.com/fonts/amiko?subsets=latin" target="_blank">google-webfonts-helper</a>
+		<br>
+		I accessed the Cyberspace font (used for the High Scores) from
+		<a href="https://www.onlinewebfonts.com/download/84d59e31b195d8b63648554301efdc33" target="_blank">onlinewebfonts</a>
+	</footer>
+	
+</body>
+
+</html>

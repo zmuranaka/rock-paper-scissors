@@ -1,0 +1,27 @@
+/*
+File: rps_reverse_styles.css
+Zachary Muranaka
+Styles specific to the rps_reverse.html page
+*/
+
+html {
+	background: rgb(40, 0, 80);
+}
+
+body {
+	box-shadow: lightblue 40px 0px 60px,  lightblue -40px 0px 60px, inset darkgrey 0px 0px 40px;
+	border-left: 2px solid green;
+	border-right: 2px solid green;
+	border-bottom: 2px solid green;
+}
+
+/* Styles both the timer div and its label */
+section#images > div#timer, section#images > label {
+	display: inline;
+	background-color: yellow;
+	font-size: 1.2em;
+}
+
+footer {
+	border-top: 2px solid green;
+}

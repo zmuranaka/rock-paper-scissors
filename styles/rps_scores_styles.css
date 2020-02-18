@@ -1,0 +1,24 @@
+/*
+File: rps_scores_styles.css
+Zachary Muranaka
+Styles specific to the high scores
+*/
+
+/* Defines the free online web font Cyberspace, which I downloaded at https://www.onlinewebfonts.com/download/84d59e31b195d8b63648554301efdc33 */
+@font-face {
+	font-family: Cyberspace;
+	src: url("../fonts/cyberspace.woff") format('woff'), url("../fonts/cyberspace.ttf") format('truetype');
+}
+
+/* List styles */
+
+ol#highScores, h1#highScoreHeader {
+	padding: 0;
+	font-family: Cyberspace, Consolas, "Lucida Console", "Lucida Sans Typewriter", "monospace";
+	letter-spacing: 0.3em;
+}
+
+ol#highScores li {
+	font-size: 1.5em;
+	list-style-position: inside; /* This ensures the number is next to the high score */
+}
