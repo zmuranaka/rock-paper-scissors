@@ -22,7 +22,7 @@ var clockID = setInterval(countdown, 1000); // Runs the countdown() function eve
 window.onload =
 function()
 {
-	alert("The rules are as follows: you begin with 60 seconds on the timer, and are trying to rack up the highest score you can! The computer will show you rock, paper, or scissors and tell you if you need to win, tie, or lose." + "\r\n" + "\r\n" + "You need to pick the correct option to fulfill that prompt. If you choose right, you score a point, but the catch is - if you choose wrong, you LOSE two points!"  + "\r\n" + "\r\n" + "Pick carefully and try to score the highest before the time runs out!");
+	alert("The rules are as follows: you begin with 60 seconds on the timer, and are trying to rack up the highest score you can! The computer will show you rock, paper, or scissors and tell you if you need to win, tie, or lose." + "\r\n" + "\r\n" + "You need to pick the correct option to fulfill that prompt. If you choose right, you score a point, but the catch is - if you choose wrong, you LOSE two points!" + "\r\n" + "\r\n" + "Pick carefully and try to score the highest before the time runs out!");
 	
 	// Sets up the high scores if they have not been already
 	if(localStorage.getItem("One") == null)
@@ -137,7 +137,7 @@ function roundEnd(roundResult)
 
 // Prevents the player from continuing to play and creates a button that asks if they would like to play again
 function endGame()
-{  
+{
 	// Disables all of the buttons
 	for(var i = 0; i < buttons.length; i++)
 		buttons[i].style.display = "none";
@@ -241,5 +241,5 @@ function resetHighScores()
 	document.getElementById("highScore2").innerHTML = localStorage.getItem("Two");
 	document.getElementById("highScore3").innerHTML = localStorage.getItem("Three");
 	document.getElementById("highScore4").innerHTML = localStorage.getItem("Three");
-	document.getElementById("highScore5").innerHTML =  localStorage.getItem("Five");
+	document.getElementById("highScore5").innerHTML = localStorage.getItem("Five");
 }

@@ -283,5 +283,5 @@ function resetHighScores()
 	document.getElementById("highScore2").innerHTML = localStorage.getItem("two");
 	document.getElementById("highScore3").innerHTML = localStorage.getItem("three");
 	document.getElementById("highScore4").innerHTML = localStorage.getItem("four");
-	document.getElementById("highScore5").innerHTML =  localStorage.getItem("five");
+	document.getElementById("highScore5").innerHTML = localStorage.getItem("five");
 }
