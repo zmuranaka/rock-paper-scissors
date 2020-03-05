@@ -30,7 +30,7 @@ function()
         localStorage.setItem("One", 0);
         localStorage.setItem("Two", 0);
         localStorage.setItem("Three", 0);
-        localStorage.setItem("Three", 0);
+        localStorage.setItem("Four", 0);
         localStorage.setItem("Five", 0);
     }
     
@@ -195,8 +195,8 @@ function checkHighScore()
     if(playerScore > parseInt(localStorage.getItem("One")))
     {
         alert("You got the Number 1 High Score!");
-        localStorage.setItem("Five", localStorage.getItem("Three"));
-        localStorage.setItem("Three", localStorage.getItem("Three"));
+        localStorage.setItem("Five", localStorage.getItem("Four"));
+        localStorage.setItem("Four", localStorage.getItem("Three"));
         localStorage.setItem("Three", localStorage.getItem("Two"));
         localStorage.setItem("Two", localStorage.getItem("One"));
         localStorage.setItem("One", playerScore);
@@ -205,8 +205,8 @@ function checkHighScore()
     else if(playerScore > parseInt(localStorage.getItem("Two")))
     {
         alert("You got the Number 2 High Score!");
-        localStorage.setItem("Five", localStorage.getItem("Three"));
-        localStorage.setItem("Three", localStorage.getItem("Three"));
+        localStorage.setItem("Five", localStorage.getItem("Four"));
+        localStorage.setItem("Four", localStorage.getItem("Three"));
         localStorage.setItem("Three", localStorage.getItem("Two"));
         localStorage.setItem("Two", playerScore);
         resetHighScores();
@@ -214,16 +214,16 @@ function checkHighScore()
     else if(playerScore > parseInt(localStorage.getItem("Three")))
     {
         alert("You got the Number 3 High Score!");
-        localStorage.setItem("Five", localStorage.getItem("Three"));
-        localStorage.setItem("Three", localStorage.getItem("Three"));
+        localStorage.setItem("Five", localStorage.getItem("Four"));
+        localStorage.setItem("Four", localStorage.getItem("Three"));
         localStorage.setItem("Three", playerScore);
         resetHighScores();
     }
-    else if(playerScore > parseInt(localStorage.getItem("Three")))
+    else if(playerScore > parseInt(localStorage.getItem("Four")))
     {
         alert("You got the Number 4 High Score!");
-        localStorage.setItem("Five", localStorage.getItem("Three"));
-        localStorage.setItem("Three", playerScore);
+        localStorage.setItem("Five", localStorage.getItem("Four"));
+        localStorage.setItem("Four", playerScore);
         resetHighScores();
     }
     else if(playerScore > parseInt(localStorage.getItem("Five")))
@@ -240,6 +240,6 @@ function resetHighScores()
     document.getElementById("highScore1").innerHTML = localStorage.getItem("One");
     document.getElementById("highScore2").innerHTML = localStorage.getItem("Two");
     document.getElementById("highScore3").innerHTML = localStorage.getItem("Three");
-    document.getElementById("highScore4").innerHTML = localStorage.getItem("Three");
+    document.getElementById("highScore4").innerHTML = localStorage.getItem("Four");
     document.getElementById("highScore5").innerHTML = localStorage.getItem("Five");
 }
