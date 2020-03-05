@@ -5,12 +5,12 @@ Styles specific to the rps_classic.html page
 */
 
 html {
-	background: rgb(205, 210, 255);
+    background: rgb(205, 210, 255);
 }
 
 body {
-	box-shadow: midnightblue 40px 0px 60px,  midnightblue -40px 0px 60px, inset darkgrey 0px 0px 40px;
-	border-left: 2px solid steelblue;
-	border-right: 2px solid steelblue;
-	border-bottom: 2px solid steelblue;
+    box-shadow: midnightblue 40px 0px 60px,  midnightblue -40px 0px 60px, inset darkgrey 0px 0px 40px;
+    border-left: 2px solid steelblue;
+    border-right: 2px solid steelblue;
+    border-bottom: 2px solid steelblue;
 }
