@@ -92,6 +92,7 @@ input[type=button] {
     width: 5em;
     font-size: 2em;
     margin-bottom: 12px;
+    padding: 0;
 }
 
 /* Styles the button that is created with JavaScript once the game is over */
