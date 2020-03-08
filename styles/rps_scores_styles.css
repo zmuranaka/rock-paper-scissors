@@ -22,3 +22,18 @@ ol#highScores li {
     font-size: 1.5em;
     list-style-position: inside; /* This ensures the number is next to the high score */
 }
+
+/* Styles for the id="source" div */
+
+div#source {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+div#source a {
+    text-decoration: none;
+}
+
+div#source a:hover {
+    text-decoration: underline;
+}

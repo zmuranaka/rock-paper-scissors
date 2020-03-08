@@ -19,7 +19,6 @@ styles
 
 I wrote all of the code myself.  
 I created the header in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
-I got the Amiko font files from https://google-webfonts-helper.herokuapp.com/fonts/amiko?subsets=latin  
 I got the Cyberspace font files from https://www.onlinewebfonts.com/download/84d59e31b195d8b63648554301efdc33
 
 ## Author:

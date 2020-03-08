@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    box-shadow: rgb(133, 187, 101) 40px 0px 60px,  rgb(133, 187, 101) -40px 0px 60px, inset darkgrey 0px 0px 40px;
     border-left: 2px solid rgb(45, 0, 170);
     border-right: 2px solid rgb(45, 0, 170);
     border-bottom: 2px solid rgb(45, 0, 170);
@@ -27,6 +26,10 @@ input[type=text] {
 label {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+div#source a {
+    color: rgb(45, 0, 170);
 }
 
 footer {

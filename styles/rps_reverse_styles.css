@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    box-shadow: lightblue 40px 0px 60px,  lightblue -40px 0px 60px, inset darkgrey 0px 0px 40px;
     border-left: 2px solid green;
     border-right: 2px solid green;
     border-bottom: 2px solid green;
@@ -20,6 +19,10 @@ section#images > div#timer, section#images > label {
     display: inline;
     background-color: yellow;
     font-size: 1.2em;
+}
+
+div#source a {
+    color: green;
 }
 
 footer {

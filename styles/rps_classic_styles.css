@@ -9,8 +9,11 @@ html {
 }
 
 body {
-    box-shadow: midnightblue 40px 0px 60px,  midnightblue -40px 0px 60px, inset darkgrey 0px 0px 40px;
     border-left: 2px solid steelblue;
     border-right: 2px solid steelblue;
     border-bottom: 2px solid steelblue;
+}
+
+footer {
+    border-top: 2px solid steelblue;
 }
