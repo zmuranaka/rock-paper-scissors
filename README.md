@@ -17,8 +17,10 @@ styles
 
 ## Sources:
 
-I wrote all of the code myself.  
-I created the header in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
+I got the GitHub logo from [GitHub](https://github.com/logos). I created the mail logo and link logo in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
+Websites that helped me create the project:  
+https://www.w3schools.com/  
+&nbsp;&nbsp;&nbsp;&nbsp;W3Schools was very helpful as a general reference.    
 I got the Cyberspace font files from https://www.onlinewebfonts.com/download/84d59e31b195d8b63648554301efdc33
 
 ## Author:
