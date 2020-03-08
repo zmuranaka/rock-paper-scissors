@@ -17,7 +17,7 @@ styles
 
 ## Sources:
 
-I got the GitHub logo from [GitHub](https://github.com/logos). I created the mail logo and link logo in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
+I got the GitHub logo from [GitHub](https://github.com/logos). I created the mail logo, link logo, and header in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
 Websites that helped me create the project:  
 https://www.w3schools.com/  
 &nbsp;&nbsp;&nbsp;&nbsp;W3Schools was very helpful as a general reference.    
