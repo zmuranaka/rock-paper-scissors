@@ -10,7 +10,7 @@ body {
     box-shadow: inset darkgrey 0px 0px 40px;
     margin: 0px auto;
     max-width: 100%;
-    min-width: 320px;
+    min-width: 320px; /* Smallest screen size in common use */
     background-color: white;
     font-family:  Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
@@ -21,29 +21,33 @@ body {
 header {
     width: 100%;
     display: table;
-    background: linear-gradient(to top, rgb(0,0,204), white);
-    background: -webkit-linear-gradient(bottom, rgb(0,0,204), white);
-    background: -o-linear-gradient(bottom, rgb(0,0,204), white);
+    background: linear-gradient(to top, rgb(0, 0, 204), white);
+    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), white);
+    background: -o-linear-gradient(bottom, rgb(0, 0, 204), white);
 }
 
-header img {
+header img#headerImg{
     width: 100%;
 }
 
-header nav ul {
+header img#burgerNav {
+    display: none;
+}
+
+header nav#navBar ul {
     padding: 0;
     margin: 0;
     float: left;
     width: 100%;
 }
 
-header nav ul li {
+header nav#navBar ul li {
     list-style-type: none;
     font-size: 1.5em;
     line-height: 2em;
 }
 
-header nav ul li a {
+header nav#navBar ul li a {
     position: relative;
     bottom: 3.15px;
     float: left;
@@ -53,11 +57,11 @@ header nav ul li a {
 }
 
 /* The header links turn a yellow gradient when hovered over */
-header nav ul a:hover {
+header nav#navBar ul li a:hover {
     background: linear-gradient(to top, yellow, white);
     background: -webkit-linear-gradient(bottom, yellow, white);
     background: -o-linear-gradient(bottom, yellow, white);
-    color: rgb(0,0,30);
+    color: rgb(0, 0, 30);
 }
 
 /* Section styles */
@@ -79,9 +83,9 @@ section#images > div#computerDiv {
 /* Input button styles */
 
 input[type=button] {
-    background: linear-gradient(to top, rgb(0,0,204), rgb(80,80,204));
-    background: -webkit-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
-    background: -o-linear-gradient(bottom, rgb(0,0,204), rgb(80,80,204));
+    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80, 80, 204));
+    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80, 80, 204));
+    background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80, 80, 204));
     color: white;
     height: 2em;
     width: 5em;
@@ -105,9 +109,9 @@ footer {
     width: 100%;
     font-size: 0.8em;
     font-variant: small-caps;
-    background: -webkit-linear-gradient(rgb(0,0,204), midnightblue);
-    background: -o-linear-gradient(rgb(0,0,204), midnightblue);
-    background: linear-gradient(rgb(0,0,204), midnightblue);
+    background: -webkit-linear-gradient(rgb(0, 0, 204), midnightblue);
+    background: -o-linear-gradient(rgb(0, 0, 204), midnightblue);
+    background: linear-gradient(rgb(0, 0, 204), midnightblue);
 }
 
 footer a {
@@ -115,4 +119,47 @@ footer a {
     color: white;
     margin: 1em 1em 1em 0;
     text-decoration: none;
+}
+
+/* Styling that applies to small screens like phones and small tablets */
+@media screen and (max-width: 579px) {
+
+    header {
+        background: linear-gradient(to top, rgb(30, 30, 204), rgb(200, 200, 255));
+        background: -webkit-linear-gradient(bottom, rgb(30, 30, 204), rgb(200, 200, 255));
+        background: -o-linear-gradient(bottom, rgb(30, 30, 204), rgb(200, 200, 255));
+    }
+
+    header img#headerImg {
+        display: none;
+    }
+
+    header img#burgerNav {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    
+    header img#burgerNav:hover {
+        background: linear-gradient(to top, yellow, white);
+        background: -webkit-linear-gradient(bottom, yellow, white);
+        background: -o-linear-gradient(bottom, yellow, white);
+    }
+
+    header img#burgerNav:active {
+        background: orange;
+    }
+
+    header nav#navBar {
+        display: none;
+    }
+
+    div#playerDiv, div#computerDiv {
+        width: 48%;
+    }
+
+    div#playerDiv img#player, div#computerDiv img#computer {
+        width: 100%;
+    }
+
 }

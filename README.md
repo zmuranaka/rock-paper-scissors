@@ -7,9 +7,9 @@ This project is the classic game of rock-paper-scissors and two variants of the 
 ## Directories:
 
 fonts  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the files for the Amiko and Cyberspace fonts.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the files for the Cyberspace font.  
 images  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the images used in the game and the header image.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the images used in the game and the header qand footer images.  
 scripts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains all of the JavaScript scripts.  
 styles  
@@ -17,7 +17,7 @@ styles
 
 ## Sources:
 
-I got the GitHub logo from [GitHub](https://github.com/logos). I created the mail logo, link logo, and header in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
+I got the GitHub logo from [GitHub](https://github.com/logos). I created the mail logo, link logo, website header, and burger nav icon in Adobe Photoshop, and I created the rock, paper, and scissors images in PicsArt on iPadOS as well as Adobe Photoshop.  
 Websites that helped me create the project:  
 https://www.w3schools.com/  
 &nbsp;&nbsp;&nbsp;&nbsp;W3Schools was very helpful as a general reference.    

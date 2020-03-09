@@ -8,26 +8,29 @@
         Classic rock-paper-scissors game
      -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Rock Paper Scissors</title>
     <link href="styles/rps_styles.css" rel="stylesheet">
     <link href="styles/rps_classic_styles.css" rel="stylesheet">
     <script src="scripts/rps_classic.js" async></script>
+    <script src="scripts/burgerNav.js" async></script>
 </head>
 
 <body>
     
     <header>
-        <img src="images/rps_header.png" alt="Rock Paper Scissors" />
-        <nav>
+        <img src="images/rps_header.png" alt="Rock Paper Scissors" id="headerImg">
+        <img src="images/burgerNav.png" alt="" id="burgerNav">
+        <nav id="navBar">
             <ul>
                 <li>
-                    <a href="rps_classic.html">Classic</a>
+                    <a href="rps_classic.html" class="loseFloat">Classic</a>
                 </li>
                 <li>
-                    <a href="rps_gambling.html">Gambling</a>
+                    <a href="rps_gambling.html" class="loseFloat">Gambling</a>
                 </li>
                 <li>
-                    <a href="rps_reverse.html">Reverse</a>
+                    <a href="rps_reverse.html" class="loseFloat">Reverse</a>
                 </li>
             </ul>
         </nav>
