@@ -9,7 +9,7 @@ This project is the classic game of rock-paper-scissors and two variants of the 
 fonts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the files for the Cyberspace font.  
 images  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the images used in the game and the header qand footer images.  
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the images used in the game and the header and footer images.  
 scripts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains all of the JavaScript scripts.  
 styles  

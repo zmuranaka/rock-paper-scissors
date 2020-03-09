@@ -3,14 +3,13 @@
 /*
 File: burgerNav.js
 Zachary Muranaka
-Gives function to the burger nav (for mobile view only)
+Allows the burner nav (for mobile view) to work
 */
 
 var burgerNav = document.getElementById("burgerNav");
 var navBar = document.getElementById("navBar");
 var anchorArray = document.getElementsByClassName("loseFloat"); // Array of anchor tags with the class "loseFloat"
 var menuIsOpen = false; // Boolean value that keeps track of whether the menu is open or not
-
 
 burgerNav.addEventListener("click", burgerNavClicked);
 
