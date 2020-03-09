@@ -3,7 +3,7 @@
 /*
 File: burgerNav.js
 Zachary Muranaka
-Allows the burner nav (for mobile view) to work
+Allows the burger nav (for mobile view) to work
 */
 
 var burgerNav = document.getElementById("burgerNav");
