@@ -26,7 +26,7 @@ header {
     background: -o-linear-gradient(bottom, rgb(0, 0, 204), white);
 }
 
-header img#headerImg{
+header img#headerImg {
     width: 100%;
 }
 
@@ -92,6 +92,14 @@ input[type=button] {
     font-size: 2em;
     margin-bottom: 12px;
     padding: 0;
+}
+
+/* Changes the color of the buttons when clicked */
+input[type=button]:active {
+    background: linear-gradient(to top, yellow, white);
+    background: -webkit-linear-gradient(bottom, yellow, white);
+    background: -o-linear-gradient(bottom, yellow, white);
+    color: rgb(0, 0, 30);
 }
 
 /* Styles the button that is created with JavaScript once the game is over */
