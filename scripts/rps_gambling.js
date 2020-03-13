@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /*
 File: rps_gambling.js
@@ -43,10 +43,10 @@ function()
     }
     
     resetHighScores();
-}
+};
 
 // All of the buttons call the buttonClicked function when clicked
-for(var i = 0; i < buttons.length; i++)
+for(let i = 0; i < buttons.length; i++)
     buttons[i].addEventListener("mousedown", buttonClicked);
 
 // Runs when the player chooses rock, paper, or scissors
@@ -85,7 +85,7 @@ function buttonClicked(e)
     // You have to double your bet if the last round was a tie and you have sufficient credits to do so
     if(lastRoundTie && boxInput < (previousBet * 2) && (previousBet * 2) < credits)
     {
-        currentBet = (previousBet * 2)
+        currentBet = (previousBet * 2);
         alert("You have to double your bet since last round was a tie!" + "\r\n" + "Your bet has been set to: " + currentBet);
     }
     else
@@ -195,7 +195,7 @@ function eraseResult()
     function()
     {
         document.getElementById("results").innerHTML = "<br><br>" + scoreHTML;
-    }, 1000)
+    }, 1000);
 }
 
 // This function handles when the game ends
@@ -204,7 +204,7 @@ function endGame(howGameEnded)
     clearTimeout(timeOut);
     
     // Disappears all of the buttons
-    for(var i = 0; i < buttons.length; i++)
+    for(let i = 0; i < buttons.length; i++)
         buttons[i].style.display = "none";
     
     document.getElementById("creditDiv").style.display = "none";
@@ -227,7 +227,7 @@ function endGame(howGameEnded)
     function()
     {
         location.reload();
-    }
+    };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }
 

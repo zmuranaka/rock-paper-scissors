@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /*
 File: rps_classic.js
@@ -22,10 +22,10 @@ function()
 {
     document.getElementById("results").innerHTML = "Welcome! Click one of the buttons to begin the game!" +
     "<br>" + "Will you be the first to three points?" + "<br>" + scoreHTML;
-}
+};
 
 // All of the buttons call the buttonClicked function when clicked
-for(var i = 0; i < buttons.length; i++)
+for(let i = 0; i < buttons.length; i++)
     buttons[i].addEventListener("mousedown", buttonClicked);
 
 // Runs when the player chooses rock, paper, or scissors
@@ -119,7 +119,7 @@ function eraseResult()
     function()
     {
         document.getElementById("results").innerHTML = "<br><br>" + scoreHTML;
-    }, 1000)
+    }, 1000);
 }
 
 // Prevents the player from continuing to play and creates a button that asks if they would like to play again
@@ -128,7 +128,7 @@ function endGame()
     clearTimeout(timeOut);
     
     // Disables all of the buttons
-    for(var i = 0; i < buttons.length; i++)
+    for(let i = 0; i < buttons.length; i++)
         buttons[i].style.display = "none";
     
     // Creates a Play Again button
@@ -141,6 +141,6 @@ function endGame()
     function()
     {
         location.reload();
-    }
+    };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }

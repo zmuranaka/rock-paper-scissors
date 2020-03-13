@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /*
 File: burgerNav.js

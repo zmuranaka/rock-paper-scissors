@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /*
 File: rps_reverse.js
@@ -39,7 +39,7 @@ function()
     document.getElementById("results").innerHTML = scoreHTML;
     
     prompt();
-}
+};
 
 // All of the buttons call the buttonClicked function when clicked
 for(var i = 0; i < buttons.length; i++)
@@ -154,7 +154,7 @@ function endGame()
     function()
     {
         location.reload();
-    }
+    };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }
 
