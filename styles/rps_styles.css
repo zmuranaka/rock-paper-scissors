@@ -92,6 +92,7 @@ input[type=button] {
     font-size: 2em;
     margin-bottom: 12px;
     padding: 0;
+    cursor: pointer;
 }
 
 /* Changes the color of the buttons when clicked */
