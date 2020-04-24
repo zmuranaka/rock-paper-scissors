@@ -26,28 +26,24 @@ header {
     background: -o-linear-gradient(bottom, rgb(0, 0, 204), white);
 }
 
-header img#headerImg {
-    width: 100%;
-}
+#headerImg { width: 100% }
 
-header img#burgerNav {
-    display: none;
-}
+#burgerNav { display: none }
 
-header nav#navBar ul {
+#navBar ul {
     padding: 0;
     margin: 0;
     float: left;
     width: 100%;
 }
 
-header nav#navBar ul li {
+#navBar ul li {
     list-style-type: none;
     font-size: 1.5em;
     line-height: 2em;
 }
 
-header nav#navBar ul li a {
+#navBar ul li a {
     position: relative;
     bottom: 3.15px;
     float: left;
@@ -57,7 +53,7 @@ header nav#navBar ul li a {
 }
 
 /* The header links turn a yellow gradient when hovered over */
-header nav#navBar ul li a:hover {
+#navBar ul li a:hover {
     background: linear-gradient(to top, yellow, white);
     background: -webkit-linear-gradient(bottom, yellow, white);
     background: -o-linear-gradient(bottom, yellow, white);
@@ -67,18 +63,14 @@ header nav#navBar ul li a:hover {
 /* Section styles */
 
 /* The next three rules set up where the section divs appear on the screen */
-section#images > div#playerDiv {
-    float: left;
-}
+#images > #playerDiv { float: left }
 
-section#images > div#results {
+#images > #results {
     clear: both;
     font-size: 1.5em;
 }
 
-section#images > div#computerDiv {
-    float: right;
-}
+#images > #computerDiv { float: right }
 
 /* Input button styles */
 
@@ -104,9 +96,7 @@ input[type=button]:active {
 }
 
 /* Styles the button that is created with JavaScript once the game is over */
-input[type=button]#playAgain {
-    width: 6em;
-}
+#playAgain { width: 6em }
 
 /* Footer styles */
 
@@ -139,36 +129,26 @@ footer a {
         background: -o-linear-gradient(bottom, rgb(30, 30, 204), rgb(200, 200, 255));
     }
 
-    header img#headerImg {
-        display: none;
-    }
+    #headerImg { display: none }
 
-    header img#burgerNav {
+    #burgerNav {
         display: block;
         float: right;
         cursor: pointer;
     }
     
-    header img#burgerNav:hover {
+    #burgerNav:hover {
         background: linear-gradient(to top, yellow, white);
         background: -webkit-linear-gradient(bottom, yellow, white);
         background: -o-linear-gradient(bottom, yellow, white);
     }
 
-    header img#burgerNav:active {
-        background: orange;
-    }
+    #burgerNav:active { background: orange }
 
-    header nav#navBar {
-        display: none;
-    }
+    #navBar { display: none }
 
-    div#playerDiv, div#computerDiv {
-        width: 48%;
-    }
+    #playerDiv, #computerDiv { width: 48% }
 
-    div#playerDiv img#player, div#computerDiv img#computer {
-        width: 100%;
-    }
+    #playerDiv #player, #computerDiv #computer { width: 100% }
 
 }

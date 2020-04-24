@@ -4,9 +4,7 @@ Zachary Muranaka
 Styles specific to the rps_classic.html page
 */
 
-html {
-    background: rgb(205, 210, 255);
-}
+html { background: rgb(205, 210, 255) }
 
 body {
     border-left: 2px solid steelblue;
@@ -14,6 +12,4 @@ body {
     border-bottom: 2px solid steelblue;
 }
 
-footer {
-    border-top: 2px solid steelblue;
-}
+footer { border-top: 2px solid steelblue }

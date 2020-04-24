@@ -4,9 +4,7 @@ Zachary Muranaka
 Styles specific to the rps_gambling.html page
 */
 
-html {
-    background: darkgreen;
-}
+html { background: darkgreen }
 
 body {
     border-left: 2px solid rgb(45, 0, 170);
@@ -28,10 +26,6 @@ label {
     font-size: 1.5em;
 }
 
-div#source a {
-    color: rgb(45, 0, 170);
-}
+#source a { color: rgb(45, 0, 170) }
 
-footer {
-    border-top: 2px solid rgb(45, 0, 170);
-}
+footer { border-top: 2px solid rgb(45, 0, 170) }

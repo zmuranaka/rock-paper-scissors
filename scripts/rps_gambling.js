@@ -73,14 +73,9 @@ function buttonClicked(e)
      */
     var boxInput = parseInt(document.getElementById("gambleBox").value) || 0;
     
-    // If the player tries to bet a negative amount of credits, their bet is set to 0
-    if(boxInput < 0)
-        currentBet = 0;
-    // The most a player can bet is the amount of credits they have
-    else if(boxInput > credits)
-        currentBet = credits;
-    else
-        currentBet = boxInput;
+    if(boxInput < 0) currentBet = 0; // If the player tries to bet a negative amount of credits, their bet is set to 0
+    else if(boxInput > credits) currentBet = credits; // The most a player can bet is the amount of credits they have
+    else currentBet = boxInput;
     
     // You have to double your bet if the last round was a tie and you have sufficient credits to do so
     if(lastRoundTie && boxInput < (previousBet * 2) && (previousBet * 2) < credits)
@@ -105,22 +100,16 @@ function randomChoice()
     {
         case 0:
             rockCount++;
-            if(rockCount < 4)
-                return "rock";
-            else
-                return randomChoice();
+            if(rockCount < 4) return "rock";
+            else return randomChoice();
         case 1:
             paperCount++;
-            if(paperCount < 4)
-                return "paper";
-            else
-                return randomChoice();
+            if(paperCount < 4) return "paper";
+            else return randomChoice();
         case 2: 
             scissorsCount++;
-            if(scissorsCount < 4)
-                return "scissors";
-            else
-                return randomChoice();
+            if(scissorsCount < 4) return "scissors";
+            else return randomChoice();
     }
 }
 
@@ -128,8 +117,7 @@ function randomChoice()
 function checkWhoWon(playerChoice, computerChoice)
 {
     // The round was a tie if the player and the computer chose the same thing
-    if(playerChoice == computerChoice)
-        return "tie";
+    if(playerChoice == computerChoice) return "tie";
     
     // The next six "else if" statements handle if the player won or lost
     else if(playerChoice == "rock" && computerChoice == "paper")
@@ -158,8 +146,7 @@ function roundEnd(roundResult)
         document.getElementById("results").innerHTML = "<br>" + "You win!" + "<br>" + scoreHTML;
         eraseResult();
         roundCount++;
-        if(roundCount == 9)
-            endGame("nineRounds");
+        if(roundCount == 9) endGame("nineRounds");
     }
     else if(roundResult == "computer")
     {
@@ -170,11 +157,8 @@ function roundEnd(roundResult)
         document.getElementById("results").innerHTML = "<br>" + "You lose." + "<br>" + scoreHTML;
         eraseResult();
         roundCount++;
-        if(roundCount == 9)
-            endGame("nineRounds");
-        // The game also ends if you run out of credits
-        else if(credits == 0)
-            endGame("outOfCredits");
+        if(roundCount == 9) endGame("nineRounds");
+        else if(credits == 0) endGame("outOfCredits"); // The game also ends if you run out of credits
     }
     else
     {
@@ -183,8 +167,7 @@ function roundEnd(roundResult)
         document.getElementById("results").innerHTML = "<br>" + "Tie" + "<br>" + scoreHTML;
         eraseResult();
         roundCount++;
-        if(roundCount == 9)
-            endGame("nineRounds");
+        if(roundCount == 9) endGame("nineRounds");
     }
 }
 
@@ -223,11 +206,7 @@ function endGame(howGameEnded)
     playAgainButton.value = "Play Again?";
     playAgainButton.id = "playAgain";
     // The site is reloaded if the player clicks the playAgainButton
-    playAgainButton.onclick =
-    function()
-    {
-        location.reload();
-    };
+    playAgainButton.onclick = function() { location.reload(); };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }
 

@@ -65,8 +65,7 @@ function randomChoice()
 function checkWinner(playerChoice, computerChoice)
 {
     // The round was a tie if the player and the computer chose the same thing
-    if(playerChoice == computerChoice)
-        return "tie";
+    if(playerChoice == computerChoice) return "tie";
     
     // The next six "else if" statements handle if the player won or lost
     else if(playerChoice == "rock" && computerChoice == "paper")
@@ -92,8 +91,7 @@ function roundEnd(roundResult)
         scoreHTML = "Your Score: " + playerScore + "<br>" + "Computer Score: " + computerScore;
         document.getElementById("results").innerHTML = "<br>" + "You win!" + "<br>" + scoreHTML;
         eraseResult();
-        if(playerScore == 3)
-            endGame();
+        if(playerScore == 3) endGame();
     }
     else if(roundResult == "computer")
     {
@@ -101,8 +99,7 @@ function roundEnd(roundResult)
         scoreHTML = "Your Score: " + playerScore + "<br>" + "Computer Score: " + computerScore;
         document.getElementById("results").innerHTML = "<br>" + "You lose." + "<br>" + scoreHTML;
         eraseResult();
-        if(computerScore == 3)
-            endGame();
+        if(computerScore == 3) endGame();
     }
     else
     {
@@ -137,10 +134,6 @@ function endGame()
     playAgainButton.value = "Play Again?";
     playAgainButton.id = "playAgain";
     // The site is reloaded if the player clicks the playAgainButton
-    playAgainButton.onclick =
-    function()
-    {
-        location.reload();
-    };
+    playAgainButton.onclick = function() { location.reload(); };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }

@@ -95,8 +95,7 @@ function wtlChoice()
 function checkWinner(playerChoice, computerChoice)
 {
     // The round was a tie if the player and the computer chose the same thing
-    if(playerChoice == computerChoice)
-        return "tie";
+    if(playerChoice == computerChoice) return "tie";
     
     // The next six "else if" statements handle if the player won or lost
     else if(playerChoice == "rock" && computerChoice == "paper")
@@ -150,11 +149,7 @@ function endGame()
     playAgainButton.value = "Play Again?";
     playAgainButton.id = "playAgain";
     // The site is reloaded if the player clicks the playAgainButton
-    playAgainButton.onclick =
-    function()
-    {
-        location.reload();
-    };
+    playAgainButton.onclick = function() { location.reload(); };
     document.getElementById("playAgainDiv").appendChild(playAgainButton);
 }
 
@@ -163,7 +158,7 @@ function countdown()
 {
     var secsString = addLeadingZero(secsLeft); // Calls the addLeadingZero() function to convert the minsLeft and secsLeft variables to strings
     document.getElementById("timer").textContent = secsString;
-    checkTimer(); // Runs the checkTimer() function to test if there is any time left    
+    if(secsLeft === 0) stopClock(); // Checks if there is any time left  
     secsLeft--; // Decrements the secsLeft variable
 }
 
@@ -173,13 +168,6 @@ function stopClock()
     document.getElementById("timer").insertAdjacentHTML("beforeend", "<br />(Time up!)");
     clearInterval(clockID);
     endGame();
-}
-
-// If there are no seconds left, the clock is stopped
-function checkTimer()
-{
-    if (secsLeft === 0)
-        stopClock();
 }
 
 // The addLeadingZero() function adds a leading zero to values which are less than 10 but greater than 0

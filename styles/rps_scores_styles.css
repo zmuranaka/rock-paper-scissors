@@ -12,28 +12,24 @@ Styles specific to the high scores
 
 /* List styles */
 
-ol#highScores, h1#highScoreHeader {
+#highScores, #highScoreHeader {
     padding: 0;
     font-family: Cyberspace, Consolas, "Lucida Console", "Lucida Sans Typewriter", "monospace";
     letter-spacing: 0.3em;
 }
 
-ol#highScores li {
+#highScores li {
     font-size: 1.5em;
     list-style-position: inside; /* This ensures the number is next to the high score */
 }
 
 /* Styles for the id="source" div */
 
-div#source {
+#source {
     font-style: italic;
     margin-bottom: 1em;
 }
 
-div#source a {
-    text-decoration: none;
-}
+#source a { text-decoration: none }
 
-div#source a:hover {
-    text-decoration: underline;
-}
+#source a:hover { text-decoration: underline }

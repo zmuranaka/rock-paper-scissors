@@ -16,10 +16,8 @@ burgerNav.addEventListener("click", burgerNavClicked);
 // If the menu is open, it closes it, and if it is closed, it opens it
 function burgerNavClicked()
 {
-    if(menuIsOpen)
-        closeNavMenu();
-    else
-        openNavMenu();
+    if(menuIsOpen) closeNavMenu();
+    else openNavMenu();
 }
 
 function closeNavMenu()
