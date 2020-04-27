@@ -6,12 +6,6 @@ Styles specific to the rps_reverse.html page
 
 html { background: rgb(40, 0, 80) }
 
-body {
-    border-left: 2px solid green;
-    border-right: 2px solid green;
-    border-bottom: 2px solid green;
-}
-
 /* Styles both the timer div and its label */
 #images > #timer, #images > label {
     display: inline;
@@ -21,4 +15,7 @@ body {
 
 #source a { color: green }
 
-footer { border-top: 2px solid green }
+footer {
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}

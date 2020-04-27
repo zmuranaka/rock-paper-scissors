@@ -6,10 +6,7 @@ Styles specific to the rps_classic.html page
 
 html { background: rgb(205, 210, 255) }
 
-body {
-    border-left: 2px solid steelblue;
-    border-right: 2px solid steelblue;
-    border-bottom: 2px solid steelblue;
+footer {
+    border-top: 1px solid steelblue;
+    border-bottom: 1px solid steelblue;
 }
-
-footer { border-top: 2px solid steelblue }

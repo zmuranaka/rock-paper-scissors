@@ -6,12 +6,6 @@ Styles specific to the rps_gambling.html page
 
 html { background: darkgreen }
 
-body {
-    border-left: 2px solid rgb(45, 0, 170);
-    border-right: 2px solid rgb(45, 0, 170);
-    border-bottom: 2px solid rgb(45, 0, 170);
-}
-
 /* Styles the box where the player inputs their bet */
 input[type=text] {
     margin: 10px;
@@ -28,4 +22,7 @@ label {
 
 #source a { color: rgb(45, 0, 170) }
 
-footer { border-top: 2px solid rgb(45, 0, 170) }
+footer {
+    border-top: 1px solid rgb(45, 0, 170);
+    border-bottom: 1px solid rgb(45, 0, 170);
+}
