@@ -2,7 +2,7 @@
 
 ## What is this Project?
 
-This project is the classic game of rock-paper-scissors and two variants of the game, built with HTML, CSS, and JavaScript. The rps_classic.html page is the game of rock-paper-scissors as everyone knows, and the two variants explain the rules when loaded.
+This project is the classic game of rock-paper-scissors and two variations, built with HTML, CSS, and JavaScript. The rps_classic.html page is the game of rock-paper-scissors as everyone knows, and the two variations explain the rules when loaded.
 
 ## Directories:
 
@@ -27,4 +27,4 @@ I got the Cyberspace font files from https://www.onlinewebfonts.com/download/84d
 
 Zachary Muranaka  
 &nbsp;&nbsp;&nbsp;&nbsp;zacharymuranaka@mail.weber.edu  
-&nbsp;&nbsp;&nbsp;&nbsp;http://icarus.cs.weber.edu/~zm83483/
+&nbsp;&nbsp;&nbsp;&nbsp;https://zmuranaka.github.io
