@@ -19,15 +19,15 @@ Styles specific to the high scores
 }
 
 #highScores li {
-    font-size: 1.5em;
     list-style-position: inside; /* This ensures the number is next to the high score */
+    font-size: 1.5em;
 }
 
 /* Styles for the id="source" div */
 
 #source {
-    font-style: italic;
     margin-bottom: 1em;
+    font-style: italic;
 }
 
 #source a { text-decoration: none }

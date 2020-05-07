@@ -9,7 +9,7 @@ html { background: rgb(40, 0, 80) }
 /* Styles both the timer div and its label */
 #images > #timer, #images > label {
     display: inline;
-    background-color: yellow;
+    background: yellow;
     font-size: 1.2em;
 }
 

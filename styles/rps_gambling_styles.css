@@ -8,16 +8,16 @@ html { background: darkgreen }
 
 /* Styles the box where the player inputs their bet */
 input[type=text] {
+    height: 1.5em;
+    width: 3em;
     margin: 10px;
     font-size: 1.5em;
-    height: 1.5em;
-    widtH: 3em;
 }
 
 /* Styles the label next to the input text box */
 label {
-    font-weight: bold;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 #source a { color: rgb(45, 0, 170) }

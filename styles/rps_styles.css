@@ -6,12 +6,12 @@ Styles shared across every page
 
 /* Basic body styling */
 body {
-    text-align: center;
-    box-shadow: inset darkgrey 0px 0px 40px;
-    margin: 0px auto;
-    max-width: 100%;
+    width: 100%;
     min-width: 320px; /* Smallest screen size in common use */
-    background-color: white;
+    margin: 0px auto;
+    text-align: center;
+    background: white;
+    box-shadow: inset darkgrey 0px 0px 40px;
     font-family:  Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
@@ -19,11 +19,9 @@ body {
 
 /* The header is displayed as a table so the links will all be in a line */
 header {
-    width: 100%;
     display: table;
+    width: 100%;
     background: linear-gradient(to top, rgb(0, 0, 204), white);
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), white);
-    background: -o-linear-gradient(bottom, rgb(0, 0, 204), white);
 }
 
 #headerImg { width: 100% }
@@ -31,16 +29,16 @@ header {
 #burgerNav { display: none }
 
 #navBar ul {
-    padding: 0;
-    margin: 0;
     float: left;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #navBar ul li {
-    list-style-type: none;
-    font-size: 1.5em;
     line-height: 2em;
+    font-size: 1.5em;
+    list-style-type: none;
 }
 
 #navBar ul li a {
@@ -48,15 +46,13 @@ header {
     bottom: 3.15px;
     float: left;
     width: 33.33%;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 /* The header links turn a yellow gradient when hovered over */
 #navBar ul li a:hover {
     background: linear-gradient(to top, yellow, white);
-    background: -webkit-linear-gradient(bottom, yellow, white);
-    background: -o-linear-gradient(bottom, yellow, white);
     color: rgb(0, 0, 30);
 }
 
@@ -75,23 +71,22 @@ header {
 /* Input button styles */
 
 input[type=button] {
-    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80, 80, 204));
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 204), rgb(80, 80, 204));
-    background: -o-linear-gradient(bottom, rgb(0, 0, 204), rgb(80, 80, 204));
-    color: white;
     height: 2em;
     width: 5em;
-    font-size: 2em;
     margin-bottom: 12px;
     padding: 0;
+    background: linear-gradient(to top, rgb(0, 0, 204), rgb(80, 80, 204));
     cursor: pointer;
+    color: white;
+    font-size: 2em;
 }
+
+/* Changes the color of the buttons when hovered over */
+input[type=button]:hover { background: linear-gradient(to top, rgb(0, 175, 255), rgb(0, 255, 255)) }
 
 /* Changes the color of the buttons when clicked */
 input[type=button]:active {
     background: linear-gradient(to top, yellow, white);
-    background: -webkit-linear-gradient(bottom, yellow, white);
-    background: -o-linear-gradient(bottom, yellow, white);
     color: rgb(0, 0, 30);
 }
 
@@ -101,33 +96,28 @@ input[type=button]:active {
 /* Footer styles */
 
 footer {
-    text-align: center;
+    width: 100%;
     margin-top: 1em;
     padding-top: 1em;
-    color: white;
-    width: 100%;
-    font-size: 0.8em;
-    font-variant: small-caps;
-    background: -webkit-linear-gradient(rgb(0, 0, 204), midnightblue);
-    background: -o-linear-gradient(rgb(0, 0, 204), midnightblue);
     background: linear-gradient(rgb(0, 0, 204), midnightblue);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    font-variant: small-caps;
+    
 }
 
 footer a {
     display: inline-block;
-    color: white;
     margin: 1em 1em 1em 0;
+    color: white;
     text-decoration: none;
 }
 
 /* Styling that applies to small screens like phones and small tablets */
 @media screen and (max-width: 579px) {
 
-    header {
-        background: linear-gradient(to top, rgb(30, 30, 204), rgb(200, 200, 255));
-        background: -webkit-linear-gradient(bottom, rgb(30, 30, 204), rgb(200, 200, 255));
-        background: -o-linear-gradient(bottom, rgb(30, 30, 204), rgb(200, 200, 255));
-    }
+    header { background: linear-gradient(to top, rgb(30, 30, 204), rgb(200, 200, 255)) }
 
     #headerImg { display: none }
 
@@ -137,11 +127,7 @@ footer a {
         cursor: pointer;
     }
     
-    #burgerNav:hover {
-        background: linear-gradient(to top, yellow, white);
-        background: -webkit-linear-gradient(bottom, yellow, white);
-        background: -o-linear-gradient(bottom, yellow, white);
-    }
+    #burgerNav:hover { background: linear-gradient(to top, yellow, white) }
 
     #burgerNav:active { background: orange }
 
