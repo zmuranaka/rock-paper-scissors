@@ -14,7 +14,7 @@ Styles specific to the high scores
 
 #highScores, #highScoreHeader {
     padding: 0;
-    font-family: Cyberspace, Consolas, "Lucida Console", "Lucida Sans Typewriter", "monospace";
+    font-family: Cyberspace, Consolas, "Lucida Console", "Lucida Sans Typewriter", monospace;
     letter-spacing: 0.3em;
 }
 
